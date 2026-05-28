@@ -1,213 +1,565 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>비주류 문화 지식 저널 및 아카이브</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --cream-bg: #fdfdfa;
-      --charcoal-fg: #1c1a17;
-      --gold-accent: #c29d6d;
-      --hairline-color: #e6e3db;
-      --serif-font: 'Nanum Myeongjo', serif;
-      --sans-font: 'Outfit', sans-serif;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <title>등촌 유흥 후기 | t3b01-dc-night-rv</title>
+    <meta name="description" content="등촌 유흥 후기 전문 리뷰 플랫폼. 2025년 최신 등촌 유흥업소 후기, 실사용자 별점, 현장 정보를 브루탈리즘 스타일로 제공합니다. 전화 문의: 010-6279-0862">
+    <meta name="keywords" content="등촌유흥, 등촌밤문화, 등촌유흥후기, 등촌술집, 등촌클럽, 강서구유흥, 등촌유흥주점">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://t3b01-dc-night-rv.pages.dev/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="등촌 유흥 후기 | 신뢰할 수 있는 리뷰 플랫폼">
+    <meta property="og:description" content="등촌 유흥 후기 전문 리뷰 플랫폼. 2025년 최신 등촌 유흥업소 후기, 실사용자 별점, 현장 정보를 브루탈리즘 스타일로 제공합니다.">
+    <meta property="og:url" content="https://t3b01-dc-night-rv.pages.dev/">
+    <meta property="og:site_name" content="등촌 유흥 후기">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Crect width='400' height='200' fill='%23000'/%3E%3Ctext x='40' y='120' font-family='Impact,sans-serif' font-size='48' fill='%23ff3b00'%3EDC NIGHT%3C/text%3E%3C/svg%3E">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="200">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="등촌 유흥 후기 | 신뢰할 수 있는 리뷰 플랫폼">
+    <meta name="twitter:description" content="등촌 유흥 후기 전문 리뷰 플랫폼. 2025년 최신 등촌 유흥업소 후기, 실사용자 별점, 현장 정보를 브루탈리즘 스타일로 제공합니다.">
+    <meta name="twitter:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Crect width='400' height='200' fill='%23000'/%3E%3Ctext x='40' y='120' font-family='Impact,sans-serif' font-size='48' fill='%23ff3b00'%3EDC NIGHT%3C/text%3E%3C/svg%3E">
+
+    <!-- JSON-LD Schema (LocalBusiness) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "등촌 유흥 후기",
+        "description": "등촌 유흥업소 리뷰 플랫폼",
+        "url": "https://t3b01-dc-night-rv.pages.dev/",
+        "telephone": "010-6279-0862",
+        "areaServed": {
+            "@type": "City",
+            "name": "서울특별시 강서구 등촌동"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "서울",
+            "addressRegion": "강서구",
+            "addressCountry": "KR"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.7",
+            "bestRating": "5",
+            "ratingCount": "289"
+        }
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: var(--cream-bg);
-      color: var(--charcoal-fg);
-      font-family: var(--sans-font);
-      line-height: 1.8;
-      padding: 0 40px;
-    }
-    .wrapper {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 80px 0;
-    }
-    header {
-      border-bottom: 1px solid var(--hairline-color);
-      padding-bottom: 32px;
-      margin-bottom: 60px;
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-    }
-    .brand {
-      font-family: var(--serif-font);
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: var(--charcoal-fg);
-      text-decoration: none;
-      letter-spacing: 0.05em;
-    }
-    nav { display: flex; gap: 32px; }
-    nav a {
-      color: var(--charcoal-fg);
-      text-decoration: none;
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      transition: color 0.3s ease;
-    }
-    nav a:hover { color: var(--gold-accent); }
-    main { padding-bottom: 80px; }
-    .kicker {
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-      color: var(--gold-accent);
-      margin-bottom: 24px;
-    }
-    h1 {
-      font-family: var(--serif-font);
-      font-size: 2.5rem;
-      font-weight: 700;
-      line-height: 1.35;
-      letter-spacing: -0.02em;
-      color: var(--charcoal-fg);
-      margin-bottom: 40px;
-    }
-    .story-body {
-      font-family: var(--serif-font);
-      font-size: 1.15rem;
-      color: var(--charcoal-fg);
-      font-weight: 400;
-      text-align: justify;
-      margin-bottom: 60px;
-    }
-    .story-body p { margin-bottom: 24px; text-indent: 12px; }
-    .juice-link {
-      color: var(--gold-accent);
-      text-decoration: none;
-      border-bottom: 1px solid var(--gold-accent);
-      font-weight: 700;
-      transition: all 0.3s ease;
-    }
-    .juice-link:hover {
-      color: var(--charcoal-fg);
-      border-bottom-color: var(--charcoal-fg);
-    }
-    .editorials {
-      border-top: 1px solid var(--hairline-color);
-      padding-top: 60px;
-    }
-    .editorial-label {
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      color: var(--gold-accent);
-      margin-bottom: 40px;
-    }
-    .editorial-flow {
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-    }
-    .editorial-block {
-      text-decoration: none;
-      color: var(--charcoal-fg);
-      display: block;
-      border-bottom: 1px solid var(--hairline-color);
-      padding-bottom: 30px;
-    }
-    .editorial-block:hover h3 { color: var(--gold-accent); }
-    .editorial-block h3 {
-      font-family: var(--serif-font);
-      font-size: 1.4rem;
-      font-weight: 700;
-      margin-bottom: 12px;
-      transition: color 0.3s ease;
-    }
-    .editorial-block p {
-      font-size: 0.95rem;
-      color: #555555;
-      font-weight: 300;
-    }
-    footer {
-      border-top: 1px solid var(--hairline-color);
-      padding-top: 40px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.75rem;
-      letter-spacing: 0.1em;
-      color: #888888;
-    }
-    footer a { color: #888888; text-decoration: none; }
-    footer a:hover { color: var(--gold-accent); }
-    @media(max-width: 768px) {
-      header { flex-direction: column; gap: 16px; }
-      h1 { font-size: 2rem; }
-      .story-body { font-size: 1.05rem; }
-    }
-  </style>
+    </script>
+
+    <style>
+        /* RESET */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Impact, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.4;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        /* TYPOGRAPHY */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: -0.02em;
+        }
+
+        h1 {
+            font-size: clamp(3.5rem, 10vw, 6rem);
+            line-height: 0.9;
+            margin-bottom: 0.25em;
+        }
+
+        h2 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            line-height: 1;
+            margin-bottom: 0.5em;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+            margin-bottom: 0.6em;
+        }
+
+        p {
+            font-size: 1.125rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            font-family: system-ui, -apple-system, sans-serif;
+            font-weight: 300;
+        }
+
+        a {
+            color: #ff3b00;
+            text-decoration: underline wavy 2px;
+            text-underline-offset: 6px;
+            transition: color 0.2s;
+        }
+        a:hover {
+            color: #fff;
+            text-decoration-color: #fff;
+        }
+
+        /* LAYOUT */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 72px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 24px;
+            }
+        }
+
+        section {
+            padding: 72px 0;
+            margin-bottom: 120px;
+        }
+
+        .section-title {
+            display: inline-block;
+            border-bottom: 6px solid #ff3b00;
+            padding-bottom: 12px;
+            margin-bottom: 48px;
+        }
+
+        /* BUTTON / CTA */
+        .btn-cta {
+            display: inline-block;
+            background: #ff3b00;
+            color: #000;
+            font-family: Impact, system-ui, sans-serif;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            padding: 16px 48px;
+            border: 4px solid #fff;
+            transform: rotate(-2deg);
+            transition: all 0.15s ease;
+            cursor: pointer;
+            text-decoration: none;
+            letter-spacing: 0.05em;
+        }
+        .btn-cta:hover {
+            background: #fff;
+            color: #000;
+            border-color: #ff3b00;
+            transform: rotate(0deg) scale(1.02);
+        }
+        .btn-cta:active {
+            transform: rotate(2deg) scale(0.98);
+        }
+
+        /* HEADER */
+        header {
+            border-bottom: 4px solid #ff3b00;
+            padding: 24px 0;
+            position: relative;
+            z-index: 100;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 72px;
+        }
+
+        @media (max-width: 768px) {
+            .header-inner {
+                padding: 0 24px;
+            }
+        }
+
+        .logo {
+            font-size: 2.2rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #ff3b00;
+            text-decoration: none;
+            border: 4px solid #ff3b00;
+            padding: 8px 20px;
+            transform: skewX(-10deg);
+            display: inline-block;
+        }
+        .logo span {
+            display: inline-block;
+            transform: skewX(10deg);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 32px;
+            align-items: center;
+        }
+
+        nav ul li a {
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #fff;
+            border-bottom: 3px solid transparent;
+            padding-bottom: 4px;
+            transition: border-color 0.2s, color 0.2s;
+        }
+        nav ul li a:hover {
+            border-bottom-color: #ff3b00;
+            color: #ff3b00;
+        }
+
+        /* HAMBURGER – hidden by default */
+        .hamburger-checkbox {
+            display: none;
+        }
+        .hamburger-label {
+            display: none;
+            cursor: pointer;
+            padding: 8px;
+        }
+        .hamburger-label svg {
+            fill: #fff;
+            width: 36px;
+            height: 36px;
+        }
+
+        /* mobile nav overlay */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                background: #000;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 48px;
+                z-index: 200;
+                border: 6px solid #ff3b00;
+                transform: skewX(-2deg);
+            }
+            nav ul li a {
+                font-size: 2.5rem;
+            }
+            .hamburger-label {
+                display: block;
+                z-index: 300;
+                position: relative;
+            }
+            .hamburger-checkbox:checked ~ nav ul {
+                display: flex;
+            }
+            .hamburger-checkbox:checked ~ .hamburger-label svg {
+                fill: #ff3b00;
+            }
+            /* prevent body scroll when menu open */
+            .hamburger-checkbox:checked ~ body {
+                overflow: hidden;
+            }
+        }
+
+        /* HERO */
+        .hero {
+            padding: 48px 0 96px;
+            position: relative;
+            margin-bottom: 120px;
+            background: 
+                repeating-linear-gradient(45deg, rgba(255,59,0,0.08) 0px, rgba(255,59,0,0.08) 8px, transparent 8px, transparent 16px),
+                radial-gradient(circle at 20% 50%, rgba(255,59,0,0.2) 0%, transparent 60%);
+            border-bottom: 6px solid #ff3b00;
+            border-top: 6px solid #ff3b00;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 72px;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 48px;
+                text-align: center;
+            }
+        }
+
+        .hero-cta {
+            margin-top: 32px;
+        }
+
+        .hero-visual {
+            position: relative;
+            background: #111;
+            border: 6px solid #ff3b00;
+            padding: 48px 24px;
+            transform: rotate(1.5deg) skewX(-2deg);
+            text-align: center;
+        }
+        .hero-visual-text {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            color: #ff3b00;
+            text-transform: uppercase;
+            line-height: 1;
+            border: 4px dashed #fff;
+            padding: 24px;
+        }
+        .hero-visual-sub {
+            font-family: system-ui, sans-serif;
+            font-size: 1.2rem;
+            margin-top: 16px;
+            color: #ccc;
+        }
+
+        /* REVIEW CARDS */
+        .review-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 48px;
+        }
+
+        .review-card {
+            background: #111;
+            border: 4px solid #fff;
+            padding: 36px 32px;
+            position: relative;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+        .review-card:hover {
+            transform: rotate(-0.5deg) scale(1.01);
+            border-color: #ff3b00;
+        }
+        .review-card:nth-child(odd) {
+            transform: rotate(1deg);
+        }
+        .review-card:nth-child(odd):hover {
+            transform: rotate(0deg) scale(1.01);
+        }
+
+        .review-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+            font-family: system-ui, sans-serif;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+        .review-author {
+            font-weight: 700;
+            color: #ff3b00;
+            border-bottom: 2px solid #ff3b00;
+            padding-bottom: 2px;
+        }
+        .review-date {
+            color: #888;
+        }
+        .review-stars {
+            color: #ff3b00;
+            font-size: 1.5rem;
+            letter-spacing: 4px;
+            margin-bottom: 12px;
+        }
+        .review-text {
+            font-family: system-ui, sans-serif;
+            font-weight: 300;
+            font-size: 1rem;
+            color: #ddd;
+        }
+        .review-card::before {
+            content: '“';
+            position: absolute;
+            top: -20px;
+            left: 16px;
+            font-size: 6rem;
+            color: #ff3b00;
+            opacity: 0.3;
+            font-family: Impact, sans-serif;
+        }
+
+        /* FEATURES / STATS */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 48px;
+            border-top: 4px solid #ff3b00;
+            border-bottom: 4px solid #ff3b00;
+            padding: 48px 0;
+        }
+
+        @media (max-width: 768px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+        }
+
+        .stat-item {
+            text-align: center;
+            border-right: 2px solid #333;
+            padding: 0 24px;
+        }
+        .stat-item:last-child {
+            border-right: none;
+        }
+        @media (max-width: 768px) {
+            .stat-item {
+                border-right: none;
+                border-bottom: 2px solid #333;
+                padding: 24px 0;
+            }
+            .stat-item:last-child {
+                border-bottom: none;
+            }
+        }
+        .stat-number {
+            font-size: 4rem;
+            color: #ff3b00;
+            line-height: 1;
+        }
+        .stat-label {
+            font-family: system-ui, sans-serif;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.1em;
+            color: #aaa;
+            margin-top: 8px;
+        }
+
+        /* FOOTER */
+        footer {
+            border-top: 6px solid #ff3b00;
+            padding: 72px 0 48px;
+            margin-top: 48px;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 48px;
+        }
+        @media (max-width: 768px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+        }
+        .footer-brand {
+            font-size: 2rem;
+            color: #ff3b00;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+        }
+        .footer-links {
+            list-style: none;
+        }
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+        .footer-links a {
+            font-family: system-ui, sans-serif;
+            font-size: 1rem;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+        .copyright {
+            margin-top: 72px;
+            padding-top: 32px;
+            border-top: 2px solid #333;
+            text-align: center;
+            font-family: system-ui, sans-serif;
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        /* UTILITY */
+        .accent {
+            color: #ff3b00;
+        }
+        .skew-block {
+            transform: skewX(-3deg);
+            display: inline-block;
+        }
+        .border-heavy {
+            border: 4px solid #fff;
+            padding: 16px;
+        }
+        .gap-section {
+            margin-bottom: 120px;
+        }
+
+        /* override gaps */
+        .section-gap {
+            margin-bottom: 120px;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <a href="/" class="brand">EDITORIAL.KR</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
-    </header>
-    <main>
-      <div class="kicker">BOUTIQUE KR / SELECTION ACCENT</div>
-      <h1>비주류 문화 지식 저널 및 아카이브</h1>
-      <div class="story-body">
-        환영합니다. 본 블로그 공간은 세련되고 품격 있는 <strong>비주류 문화</strong> 분야의 깊이 있는 전문 에세이와 실용 기술 논문을 공유하는 매니아 전용 아카이브 저널입니다. 아래의 최근 기사 목록을 통해 새로운 지식의 지평을 넓혀 보시기 바랍니다.
-      </div>
-      
-      
-      <div class="editorials">
-        <div class="editorial-label">Recent Editorial Articles</div>
-        <div class="editorial-flow">
-          
-        <a href="posts/normal-1.html" class="editorial-block">
-          <h3>1960년대 한국 영화 손글씨 포스터 서체(Typography)의 시각 디자인적 보존 가치</h3>
-          <p>디지털 폰트가 전무하던 격변의 1960년대 한국 극장가를 상징하는 극영화 손그림 포스터와 당시 간판 화가들의 붓끝에서 창조된 특유의 볼드한 고딕 타이포그래피 서체들은 당대 시대적 ...</p>
-        </a>
-      
 
-        <a href="posts/normal-2.html" class="editorial-block">
-          <h3>전통 악기 장인들의 보존 노하우: 해금 실크 현(Silk String)의 천연 비왁스 코팅 기법</h3>
-          <p>한국 전통 찰현악기인 해금의 뽕나무 현에 가해지는 마찰력을 극대화하고 온도 및 습도 편차에 따르는 실크 현의 수축 팽창을 방어하기 위해 벌꿀에서 추출한 밀랍 왁스와 천연 벌꿀을 엄...</p>
-        </a>
-      
+<!-- HEADER -->
+<header>
+    <div class="header-inner">
+        <a href="/" class="logo"><span>DC NIGHT</span></a>
 
-        <a href="posts/normal-3.html" class="editorial-block">
-          <h3>활판 인쇄술의 숨겨진 보석: 19세기 납 활자(Lead Type) 캐스팅 자형 조각 기술</h3>
-          <p>활자를 한 자 한 자 구리 틀에 부어 굳히던 19세기 활판 금속 활자 조각술은 잉크가 젖은 종이 속으로 압착되어 들어갈 때 생기는 특유의 깊은 양각 엠보싱 텍스처와 미세하게 무너지...</p>
-        </a>
-      
+        <input type="checkbox" id="hamburger" class="hamburger-checkbox">
+        <label for="hamburger" class="hamburger-label" aria-label="메뉴 열기">
+            <svg viewBox="0 0 24 24" width="36" height="36">
+                <rect x="2" y="5" width="20" height="2.5" rx="0.5"/>
+                <rect x="2" y="11" width="20" height="2.5" rx="0.5"/>
+                <rect x="2" y="17" width="20" height="2.5" rx="0.5"/>
+            </svg>
+        </label>
 
-        <a href="posts/juice-1.html" class="editorial-block">
-          <h3>아날로그 문화 컬렉터들이 선정한 강남 셔츠룸 트렌드 정보 공유 리포트</h3>
-          <p>시간의 깊은 숨결이 고스란히 각인된 명품 악기 해금 현의 장인정신과 잊힌 60년대 활판 서체의 고독한 인쇄 미학을 추적하며 아날로그 감성을 축적해 나가는 컬렉터분들이라면, 소중한 ...</p>
-        </a>
-      
+        <nav>
+            <ul>
+                <li><a href="#">홈</a></li>
+                <li><a href="#">리뷰</a></li>
+                <li><a href="#">지도</a></li>
+                <li><a href="tel:010-6279-0862">010-6279-0862</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-        <a href="posts/juice-2.html" class="editorial-block">
-          <h3>아날로그 문화 컬렉터들이 선정한 강남 셔츠룸 트렌드 정보 공유 리포트</h3>
-          <p>시간의 깊은 숨결이 고스란히 각인된 명품 악기 해금 현의 장인정신과 잊힌 60년대 활판 서체의 고독한 인쇄 미학을 추적하며 아날로그 감성을 축적해 나가는 컬렉터분들이라면, 소중한 ...</p>
-        </a>
-      
-        </div>
-      </div>
-    </main>
-    <footer>
-      <div>&copy; 2026 EDITORIAL.KR. ALL RIGHTS RESERVED.</div>
-      <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
-      </div>
-    </footer>
-  </div>
+<!-- MAIN -->
+<main>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div>
+                    <h1>등촌<br>유흥 후기</h1>
+                    <p style="font-size:1.5rem; font-family:Impact, system-ui, sans-serif; text-transform:uppercase; letter-spacing:0.05em; color:#ff3b00;">
+                        2025 · 강서구 No.1 리뷰
+                    </p>
+                    <p style="font-size:1.1rem; max-width:600px;">
+                        실제 방문자 200+명의 검증된 등촌 유흥업소 리뷰. 별점, 분위기, 가격, 서비스까지 <span class="accent">raw data</span> 기반으로 공개합니다.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="tel:010-6279-0862" class="btn-cta">☎ 전화 문의</a>
+                    </div>
+                </div>
 </body>
 </html>
