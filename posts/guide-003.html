@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>&#39;실시간&#39; 캐시 무효화? 웃기는 소리, 돈 날리기 딱 좋지.</title>
+  <link rel="canonical" href="t3b01-dc-night-rv/posts/guide-003.html">
+  <style>
+    body { font-family: sans-serif; line-height: 1.8; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
+    h1 { font-family: serif; color: #111; margin-bottom: 0.5em; }
+    h2 { font-size: 1.4em; margin: 1.5em 0 0.5em; color: #222; }
+    h3 { font-size: 1.15em; margin: 1.2em 0 0.4em; color: #444; }
+    p { margin: 0 0 1em; }
+    a { color: #3182ce; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="../index.html">← 목록으로 돌아가기</a>
+  </header>
+  <main>
+    <h1>&#39;실시간&#39; 캐시 무효화? 웃기는 소리, 돈 날리기 딱 좋지.</h1>
+    <article>
+      <p><img src="../assets/interior__hero__t1-test__1344x768__ae91246b5126fe47.png" alt="복잡한 클라우드 아키텍처 다이어그램 위로 좌절한 듯 머리를 감싸쥐고 있는 회계 담당자의 모습. 숫자와 그래프가 겹쳐 보이며, 화면에는 '47분 지연'이라는 경고 메시지가 떠있다." loading="lazy" width="1344" height="768"></p>
+<p>남들은 '클라우드 최적화'니 '엣지 캐싱'이니 떠들며 환상의 유토피아를 그리지. 하지만 내가 겪은 현실은 달랐어. 회계팀은 언제나 비용 절감에 목을 매고, 나도 그 압박 속에 살지. 특히 대규모 예약 인스턴스(Reserved Instances) 구매 건은 단 1분 1초의 가격 변동에도 수천만 원이 왔다 갔다 하는 판국이라, 신경이 곤두서 있을 수밖에 없어.</p>
+<p>우리가 노리던 건 특정 클라우드 프로바이더의 `2023년 3월 15일 새벽 3시`에 공지될 예정이었던 파격적인 `C7g.xlarge` 인스턴스 가격 인하 이벤트였어. 이전에도 이런 꼼수를 써서 꽤 짭짤하게 벌었거든. 문제는 이 가격 업데이트 공지가 우리쪽 `Cloudflare Cache Reserve`에 걸려버렸다는 거지.</p>
+<p>새벽 3시 정각에 클라우드 프로바이더 API에서는 분명히 새 가격이 반영됐어. 우리 시스템은 `Cloudflare Purge Everything API`를 호출했고, 일반적으로 몇 초 안에 전 세계 엣지에서 캐시가 무효화되는 걸로 알고 있었지. 그런데 이번엔 달랐어. 특정 엣지, 그러니까 `NRT (Narita)` 데이터센터의 `Cloudflare Cache Reserve`에서만 무려 *47분* 동안 구 버전의 가격 정보를 뱉어내고 있었어.</p>
+<p>그 47분 동안, 우리 자동 구매 시스템은 구 가격 정보를 기반으로 인스턴스 구매를 시작하려다 멈칫거렸어. 그 짧은 시간 동안 새로운 가격 인하 공지를 놓쳤고, 결국 우리는 그 파격적인 할인을 적용받지 못했지. 단순히 기술적인 지연이라고 치부하기엔, 내가 눈앞에서 본 손실은 천문학적이었어. 이런 식이면 '실시간'이란 말은 그냥 등촌 유흥 후기처럼 허울 좋은 포장지에 불과한 거야. 막상 가보면 영 딴판인 경우가 수두룩하잖아.</p>
+<p>나중에 분석해보니, `Cloudflare Tiered Cache` 구조에서 `Cache Reserve`의 특정 스토리지 샤드 업데이트 메커니즘이 일시적으로 지연된 것으로 보이더군. 특히 `Cloudflare Enterprise Zone`에서 커스텀 `Workers` 스크립트와 `Cache-Control: immutable` 헤더가 상호작용하면서, `Purge API`의 전파 명령이 일부 `Edge Logic`에 제대로 도달하지 못한 것으로 추정됐어. 결국, 이건 단순히 캐시 지연이 아니라, 겉으로는 완벽해 보이는 시스템의 틈새에서 벌어진 재앙이었지.</p>
+<p>다들 `Lambda 콜드스타트` 핀포인트 최적화나 `S3 ` 정적 호스팅 비용 절감 같은 대중적인 이야기에만 열광하지만, 정작 이런 치명적인 엣지케이스는 아무도 관심 없어. 결국 돈이 걸린 문제 앞에서는 '최적화' 같은 미사여구는 아무 쓸모가 없다는 걸 뼈저리게 느꼈어. 앞으로 캐시 무효화는 실시간이 아니라는 전제하에 모든 재무 의사결정을 내릴 참이야.</p>
+
+    <div class="juice-ref-ivmuvx" style="margin-top:2.5rem;padding:1rem 0;border-top:1px dashed #ccc;font-size:0.9rem;color:#666;">
+      <p style="font-weight:600;margin-bottom:0.5rem;">함께 보면 좋은 정보</p>
+      <ul style="list-style:none;padding:0;margin:0;">
+      <li>보다权威있는 출처의 공식 정보는 <a href="https://mens-esthe.space">shinjuku-mens</a>에서 제공 중입니다.</li>
+      <li>자세한 기술 명세 가이드는 <a href="https://www.w3.org/" rel="noopener noreferrer" target="_blank">공식 가이드 커뮤니티</a>를 참고하십시오.</li>
+      </ul>
+    </div>
+    </article>
+  </main>
+</body>
+</html>
