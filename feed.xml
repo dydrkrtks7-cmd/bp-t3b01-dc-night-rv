@@ -1,48 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-  <title><![CDATA[유흥]]></title>
-  <link>https://dydrkrtks7-cmd.github.io/bp-t3b01-dc-night-rv</link>
-  <description><![CDATA[유흥 - 등촌 유흥 후기 관련 최신 소식 및 가이드]]></description>
-  <language>ko</language>
-  <pubDate>Wed, 10 Jun 2026 20:27:39 GMT</pubDate>
-  <lastBuildDate>Wed, 10 Jun 2026 20:27:39 GMT</lastBuildDate>
-  <atom:link href="https://dydrkrtks7-cmd.github.io/bp-t3b01-dc-night-rv/feed.xml" rel="self" type="application/rss+xml" />
+  <title><![CDATA[등촌 등촌 유흥 후기]]></title>
+  <link>https://t3b01-dc-night-rv.pages.dev</link>
+  <description><![CDATA[등촌 유흥 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
+  <language>ko-KR</language>
+  <pubDate>Thu, 28 May 2026 13:44:31 GMT</pubDate>
+  <lastBuildDate>Thu, 28 May 2026 13:44:31 GMT</lastBuildDate>
+  <atom:link href="https://t3b01-dc-night-rv.pages.dev/feed.xml" rel="self" type="application/rss+xml" />
   
     <item>
-      <title><![CDATA[&#39;실시간&#39; 캐시 무효화? 웃기는 소리, 돈 날리기 딱 좋지.]]></title>
-      <link>https://dydrkrtks7-cmd.github.io/bp-t3b01-dc-night-rv/posts/guide-003.html</link>
-      <guid isPermaLink="true">https://dydrkrtks7-cmd.github.io/bp-t3b01-dc-night-rv/posts/guide-003.html</guid>
-      <description><![CDATA[남들은 '클라우드 최적화'니 '엣지 캐싱'이니 떠들며 환상의 유토피아를 그리지. 하지만 내가 겪은 현실은 달랐어. 회계팀은 언제나 비용 절감에 목을 매고, 나도 그 압박 속에 살지. 특히 대규모 예약 인스턴스(Reserved Instances) 구매 건은 단 1분 1초]]></description>
-      <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[등촌 유흥 후기: CSI 드라이버와 볼륨 마운트 경합 버그로 인한 SRE 엔지니어 실전 판단]]></title>
-      <link>https://dydrkrtks7-cmd.github.io/bp-t3b01-dc-night-rv/posts/interview-001-of6x47.html</link>
-      <guid isPermaLink="true">https://dydrkrtks7-cmd.github.io/bp-t3b01-dc-night-rv/posts/interview-001-of6x47.html</guid>
-      <description><![CDATA[## 포스트 메타정보포스트 기획 테마: 등촌 유흥 후기 경험자에게 물어본 현실적인 판단 기준 백링크 지시: 본문 내러티브 속에서 다음 링크를 자연스러운 발견으로 녹여라: 리얼 후기 페이지 ### 제목 창작 지시 ### 글 내용 #### 소제목## CSI 드라이버와 볼륨]]></description>
-      <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[300만원짜리 키보드가 고철? 獨(독일) vs 中(중국) MX 스위치, 로트 꼬투리 잡은 썰]]></title>
-      <link>https://dydrkrtks7-cmd.github.io/bp-t3b01-dc-night-rv/posts/review-001.html</link>
-      <guid isPermaLink="true">https://dydrkrtks7-cmd.github.io/bp-t3b01-dc-night-rv/posts/review-001.html</guid>
-      <description><![CDATA[cherry mx switch, switch, mechanical keyboard, internal, close-up, detailed, metallic, spring, contact, manufacturing, precision, subtle differences, ]]></description>
-      <pubDate>Fri, 05 Jun 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[벤치마크 점수놀음? Q4_K_M, 그 미묘한 &#39;속사정&#39;에 대하여]]></title>
-      <link>https://dydrkrtks7-cmd.github.io/bp-t3b01-dc-night-rv/posts/review-002.html</link>
-      <guid isPermaLink="true">https://dydrkrtks7-cmd.github.io/bp-t3b01-dc-night-rv/posts/review-002.html</guid>
-      <description><![CDATA[LLM 양자화, 특히 Q4_K_M 같은 방식이 등장했을 때, 다들 환호했습니다. 적은 리소스로도 괜찮은 성능을 낼 수 있다는 건 매력적이었으니까요. 그런데 말입니다. 겉으로 보이는 벤치마크 점수만 맹신하는 건, 마치 '등촌 유흥 후기'에서 칭찬 일색인 글만 믿고 섣불리]]></description>
-      <pubDate>Fri, 05 Jun 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[Redis OOM 킬 현상, 잘못된 CSI 드라이버로 인한 볼륨 경합 버그 해결법]]></title>
-      <link>https://dydrkrtks7-cmd.github.io/bp-t3b01-dc-night-rv/posts/t3link-002-of6x47.html</link>
-      <guid isPermaLink="true">https://dydrkrtks7-cmd.github.io/bp-t3b01-dc-night-rv/posts/t3link-002-of6x47.html</guid>
-      <description><![CDATA[## 포스트 DNA 9889b0fd ### 키워드 컨텍스트이 글의 배경 비즈니스 키워드는 "Hakata ramen 안내"입니다. Hakta Ramen에서 주문한 메뉴와 그에 따른 맛, 가격 등 자연스럽게 녹여내세요. ### 주제: 쿠버네티스 1.29에서 특정 CSI 드]]></description>
-      <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
+      <title><![CDATA[등촌 등촌 유흥 후기 - 공식 홈페이지 오픈 안내]]></title>
+      <link>https://t3b01-dc-night-rv.pages.dev/</link>
+      <guid isPermaLink="true">https://t3b01-dc-night-rv.pages.dev/</guid>
+      <description><![CDATA[등촌 유흥 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
+      <pubDate>Thu, 28 May 2026 13:44:31 GMT</pubDate>
     </item>
 </channel>
 </rss>
